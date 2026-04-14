@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mr. Wang - Web Development / SEO / SEM / GEO Optimization</title>
+  <meta name="description" content="Mr. Wang focuses on web development, SEO, SEM, and GEO optimization, helping individuals and businesses improve search visibility, generate more traffic, leads, and business opportunities." />
+  <meta name="keywords" content="Mr. Wang, web development, SEO, SEM, GEO, generative engine optimization, search optimization, corporate website, independent site optimization" />
+  <meta name="author" content="Mr. Wang" />
+  <meta name="application-name" content="Mr. Wang" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light" />
+
+  <link rel="canonical" href="https://www.mrwang.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Mr. Wang" />
+  <meta property="og:title" content="Mr. Wang - Web Development / SEO / SEM / GEO Optimization" />
+  <meta property="og:description" content="Mr. Wang focuses on web development, SEO, SEM, and GEO optimization, helping individuals and businesses improve search visibility, generate more traffic, leads, and business opportunities." />
+  <meta property="og:url" content="https://www.mrwang.com/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mr. Wang - Web Development / SEO / SEM / GEO Optimization" />
+  <meta name="twitter:description" content="Mr. Wang focuses on web development, SEO, SEM, and GEO optimization, helping individuals and businesses improve search visibility, generate more traffic, leads, and business opportunities." />
+
+  <style>
+    :root {
+      --bg1: #f7f9fc;
+      --bg2: #edf3fa;
+      --card: rgba(255,255,255,0.92);
+      --card-solid: #ffffff;
+      --text: #1d1d1f;
+      --sub: #667085;
+      --muted: #94a3b8;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --light: #eef4ff;
+      --light-hover: #e2ebff;
+      --border: #e5e7eb;
+      --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+      --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.05);
+      --success: #16a34a;
+      --danger: #dc2626;
+      --maxw: 1220px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+      padding: 14px 10px 30px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      width: min(var(--maxw), 100%);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 12px;
+      z-index: 50;
+      margin-bottom: 18px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.62);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.04);
+    }
+
+    .topbar-inner {
+      min-height: 70px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .brand-info {
+      min-width: 0;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      margin-top: 2px;
+      font-size: 12px;
+      color: var(--sub);
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 14px;
+      color: #475569;
+      transition: .2s ease;
+    }
+
+    .nav a:hover {
+      background: var(--light);
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-hover);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      color: #334155;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .mobile-nav {
+      display: none;
+      padding: 0 14px 14px;
+    }
+
+    .mobile-nav.show {
+      display: block;
+    }
+
+    .mobile-nav-inner {
+      border-top: 1px solid rgba(0,0,0,0.05);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .mobile-nav a {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #fff;
+      border: 1px solid var(--border);
+      color: #475569;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .mobile-nav a:last-child {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .hero {
+      background: var(--card);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.62);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 32px 28px 26px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: #475569;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      margin: 0 0 8px;
+      font-size: clamp(2.5rem, 5vw, 4.4rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      font-weight: 900;
+      color: var(--primary);
+    }
+
+    .hero-services {
+      margin: 0 0 14px;
+      font-size: clamp(1.2rem, 2.2vw, 2rem);
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .lead {
+      max-width: 860px;
+      margin: 0 0 18px;
+      color: #475569;
+      font-size: 16px;
+      line-height: 1.95;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .hero-tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: #475569;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .hero-summary {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .hero-panel,
+    .card,
+    .mini-card,
+    .contact-main,
+    .contact-side {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-panel {
+      padding: 18px;
+    }
+
+    .hero-panel h3 {
+      font-size: 18px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .hero-panel p,
+    .hero-panel li {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .hero-panel ul {
+      padding-left: 18px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .metric {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      padding: 16px;
+    }
+
+    .metric-num {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #0f172a;
+    }
+
+    .metric-text {
+      margin-top: 6px;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: .2s ease;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(37,99,235,0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-light {
+      background: var(--light);
+      color: #334155;
+    }
+
+    .btn-light:hover {
+      background: var(--light-hover);
+      transform: translateY(-1px);
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .card {
+      overflow: hidden;
+    }
+
+    .section-head {
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .section-head h2 {
+      font-size: 24px;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .section-head p {
+      max-width: 900px;
+      color: var(--sub);
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .section-body {
+      padding: 22px;
+    }
+
+    .grid-4,
+    .grid-3,
+    .grid-2,
+    .process-grid,
+    .field-grid-2,
+    .contact-layout,
+    .contact-side-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-3,
+    .process-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2,
+    .field-grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-layout {
+      grid-template-columns: 1.08fr 0.92fr;
+    }
+
+    .contact-side-grid {
+      grid-template-columns: 1fr;
+      align-content: start;
+    }
+
+    .mini-card {
+      padding: 18px;
+    }
+
+    .mini-card h3 {
+      font-size: 18px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .mini-card p,
+    .mini-card li {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .mini-card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .mini-card .more {
+      margin-top: 14px;
+      display: inline-flex;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .step-no {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+
+    .faq details {
+      border-top: 1px solid #eef2f7;
+      padding: 14px 0;
+    }
+
+    .faq details:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      list-style: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq .answer {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.95;
+      color: #475569;
+    }
+
+    .contact-main,
+    .contact-side {
+      padding: 20px;
+    }
+
+    .contact-main h3,
+    .contact-side h3 {
+      font-size: 20px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .contact-main > p,
+    .contact-side > p {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .contact-form {
+      margin-top: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .field label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #334155;
+    }
+
+    .input,
+    .select,
+    .textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      color: var(--text);
+      padding: 13px 14px;
+      font-size: 14px;
+      outline: none;
+      transition: .2s ease;
+      font-family: inherit;
+    }
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+      border-color: #93c5fd;
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.08);
+    }
+
+    .textarea {
+      min-height: 140px;
+      resize: vertical;
+      line-height: 1.8;
+    }
+
+    .ip-status {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 1.8;
+      color: var(--sub);
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .result {
+      display: none;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 13px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      word-break: break-word;
+      border: 1px solid transparent;
+      background: #f8fafc;
+    }
+
+    .result.ok {
+      color: #166534;
+      background: #ecfdf5;
+      border-color: #bbf7d0;
+    }
+
+    .result.err {
+      color: #991b1b;
+      background: #fef2f2;
+      border-color: #fecaca;
+    }
+
+    .contact-meta {
+      display: grid;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .contact-meta-item {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.85;
+      word-break: break-all;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow-soft);
+      padding: 18px 20px;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.9;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #475569;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    .split-line {
+      margin: 0 8px;
+      color: #cbd5e1;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-summary,
+      .metrics,
+      .grid-4,
+      .grid-3,
+      .process-grid,
+      .contact-layout {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav,
+      .nav-cta {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .brand-sub {
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .topbar-inner,
+      .hero,
+      .section-head,
+      .section-body,
+      .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hero {
+        padding-top: 24px;
+        padding-bottom: 22px;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 9vw, 3rem);
+        margin-bottom: 6px;
+      }
+
+      .hero-services {
+        font-size: clamp(1rem, 4.8vw, 1.35rem);
+        margin-bottom: 12px;
+      }
+
+      .lead {
+        font-size: 15px;
+        line-height: 1.9;
+      }
+
+      .hero-actions,
+      .contact-links {
+        width: 100%;
+      }
+
+      .hero-summary,
+      .metrics,
+      .grid-4,
+      .grid-3,
+      .grid-2,
+      .process-grid,
+      .contact-layout,
+      .field-grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mr. Wang",
+    "url": "https://www.mrwang.com/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mr. Wang",
+    "url": "https://www.mrwang.com/",
+    "email": "contact@mrwang.com",
+    "telephone": "+86-512-5782-8333",
+    "jobTitle": "SEO / SEM / GEO / Web Development Consultant",
+    "description": "Focused on web development, SEO, SEM, and GEO optimization, helping individuals and businesses improve search visibility, generate more traffic, inquiries, and business opportunities.",
+    "knowsAbout": [
+      "Web Development",
+      "SEO",
+      "SEM",
+      "GEO",
+      "Generative Engine Optimization",
+      "Corporate Website Optimization",
+      "Search Traffic Growth",
+      "Landing Page Optimization"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Mr. Wang",
+    "url": "https://www.mrwang.com/",
+    "description": "Specializing in web development, SEO, SEM, and GEO optimization to help individuals and businesses improve search visibility, generate more traffic, inquiries, and business opportunities.",
+    "email": "contact@mrwang.com",
+    "telephone": "+86-512-5782-8333",
+    "serviceType": [
+      "Web Development",
+      "SEO Optimization",
+      "SEM Campaign Support",
+      "GEO Optimization"
+    ],
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should web development and SEO be handled separately or together?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is usually better to plan them together. Site architecture, page structure, content organization, and technical foundations all directly affect SEO performance later. If you align search and conversion logic during the build stage, you can avoid a lot of rework afterward."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How should SEO and SEM work together?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO is better for long-term organic growth, while SEM is better for immediate high-intent acquisition. In most cases, the stronger approach is not choosing one over the other, but using SEM for short-term goals while SEO builds long-term content authority and organic visibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between GEO and traditional SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GEO focuses more on how a brand appears in generative search, AI answer engines, and new retrieval environments. In addition to page optimization, it also emphasizes brand identity, proof points, FAQs, content consistency, and trust signals."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar" aria-label="Top navigation">
+      <div class="topbar-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark">MW</span>
+          <span class="brand-info">
+            <span class="brand-title">Mr. Wang</span>
+            <span class="brand-sub">Web Development / SEO / SEM / GEO</span>
+          </span>
+        </a>
+
+        <div class="nav-wrap">
+          <nav class="nav" aria-label="Desktop navigation">
+            <a href="#services">Services</a>
+            <a href="#advantage">Why Me</a>
+            <a href="#scene">Use Cases</a>
+            <a href="#process">Process</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a class="nav-cta" href="#contact">Get in Touch</a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+          <a href="#services">Services</a>
+          <a href="#advantage">Why Work With Me</a>
+          <a href="#scene">Best-Fit Scenarios</a>
+          <a href="#process">How We Work</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">www.mrwang.com</div>
+
+        <h1 class="hero-title">Mr. Wang</h1>
+
+        <h2 class="hero-services">SEO / SEM / GEO / Web Development</h2>
+
+        <p class="lead">
+          I focus on web development, SEO, SEM, and GEO optimization to help individuals and businesses improve search visibility,
+          generate more traffic, inquiries, and real business opportunities.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get in Touch</a>
+          <a class="btn btn-light" href="#services">Explore Services</a>
+          <a class="btn btn-light" href="https://tools.mrwang.com/" target="_blank" rel="noopener noreferrer">Visit Tools</a>
+        </div>
+
+        <div class="hero-tags">
+          <span class="tag">Corporate Website Development</span>
+          <span class="tag">Independent Site Optimization</span>
+          <span class="tag">Organic Search Growth</span>
+          <span class="tag">Landing Page Optimization</span>
+          <span class="tag">Generative Search Readiness</span>
+        </div>
+
+        <div class="hero-summary">
+          <div class="hero-panel">
+            <h3>You may be facing challenges like these</h3>
+            <ul>
+              <li>Your website is live, but it has little to no organic traffic and very few inquiries.</li>
+              <li>You are running ads, but your landing pages are weak and acquisition costs stay high.</li>
+              <li>You have many pages, but the search structure is messy and keyword coverage is unclear.</li>
+              <li>You want your brand to appear in AI search, but you have not yet built the right GEO foundation.</li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <h3>These are the outcomes I care about</h3>
+            <ul>
+              <li>Make it easier for the right audience to find you.</li>
+              <li>Help your pages convert more traffic into qualified inquiries.</li>
+              <li>Align paid campaigns and organic search instead of treating them separately.</li>
+              <li>Build a website that can accumulate long-term search value over time.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-num">15+</div>
+            <div class="metric-text">Years of continuous industry experience</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num">100+</div>
+            <div class="metric-text">Clients served</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num">1000+</div>
+            <div class="metric-text">Websites managed over time</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num">50000+</div>
+            <div class="metric-text">Peak daily IP record for a single website</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="card">
+          <div class="section-head">
+            <h2>Services</h2>
+            <p>This is not just one-off execution. I optimize the full journey across website positioning, search acquisition, on-page conversion, and trust building.</p>
+          </div>
+          <div class="section-body">
+            <div class="grid-4">
+              <article class="mini-card">
+                <h3>Web Development</h3>
+                <p>I look at positioning, site architecture, content planning, technical foundations, and future scalability together, so your website is built to support long-term growth instead of just going live.</p>
+                <a class="more" href="#contact">Ask about web development</a>
+              </article>
+
+              <article class="mini-card">
+                <h3>SEO Optimization</h3>
+                <p>I optimize around search intent, content structure, internal linking, page foundations, and search conversion paths, not just surface-level tweaks. The goal is meaningful organic visibility that actually brings results.</p>
+                <a class="more" href="#contact">Ask about SEO</a>
+              </article>
+
+              <article class="mini-card">
+                <h3>SEM Support</h3>
+                <p>I do not look at ad delivery in isolation. I also focus on landing page messaging, trust signals, form flow, and lead capture so that paid traffic is more likely to turn into real inquiries.</p>
+                <a class="more" href="#contact">Ask about SEM</a>
+              </article>
+
+              <article class="mini-card">
+                <h3>GEO Optimization</h3>
+                <p>For generative search environments, I improve brand identity signals, case information, FAQs, page consistency, and trust indicators to increase your chances of being surfaced clearly in AI-driven results.</p>
+                <a class="more" href="#contact">Ask about GEO</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="advantage">
+        <div class="card">
+          <div class="section-head">
+            <h2>Why Work With Me</h2>
+            <p>Rather than looking only at design, only at engineering, or only at advertising, I prefer to connect your website, search strategy, content, and conversion path as one system.</p>
+          </div>
+          <div class="section-body">
+            <div class="grid-3">
+              <div class="mini-card">
+                <h3>Not just pages, but business alignment</h3>
+                <p>I first look at who the website serves, what problem it solves, and how it should communicate, instead of jumping straight into visuals and features.</p>
+              </div>
+
+              <div class="mini-card">
+                <h3>Not just traffic, but conversion flow</h3>
+                <p>Search rankings and ad clicks are only the starting point. What matters is whether visitors quickly understand your offer, trust you, and are willing to reach out.</p>
+              </div>
+
+              <div class="mini-card">
+                <h3>Not just now, but sustainable growth</h3>
+                <p>A strong website should support continuous updates, ongoing optimization, and long-term accumulation of brand and search signals, not just a one-time delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="scene">
+        <div class="card">
+          <div class="section-head">
+            <h2>Best-Fit Scenarios</h2>
+            <p>If your situation looks like one of the following, this kind of collaboration usually creates stronger and more practical results.</p>
+          </div>
+          <div class="section-body">
+            <div class="grid-2">
+              <div class="mini-card">
+                <h3>Launching a new website or brand site</h3>
+                <ul>
+                  <li>You are planning a corporate website, personal brand site, or service-focused website</li>
+                  <li>You do not want to rebuild the structure later for SEO, ads, or content</li>
+                  <li>You want clear positioning, conversion flow, and search foundations from day one</li>
+                </ul>
+              </div>
+
+              <div class="mini-card">
+                <h3>An existing website with weak performance</h3>
+                <ul>
+                  <li>Your website is already online, but traffic and inquiries are inconsistent</li>
+                  <li>You are running ads, but your landing page conversion is weak and costs are high</li>
+                  <li>Your content is scattered, your structure is messy, and your keyword direction is unclear</li>
+                </ul>
+              </div>
+
+              <div class="mini-card">
+                <h3>You want search growth</h3>
+                <ul>
+                  <li>You want to strengthen organic SEO performance</li>
+                  <li>You want your content and site structure to better match search intent</li>
+                  <li>You want the website to gradually accumulate long-term search value</li>
+                </ul>
+              </div>
+
+              <div class="mini-card">
+                <h3>You want to prepare for GEO early</h3>
+                <ul>
+                  <li>You want your brand to be easier to surface in AI search environments</li>
+                  <li>You want FAQs, case studies, and brand identity information to be more structured</li>
+                  <li>You want your website to be better prepared for generative search trends</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="card">
+          <div class="section-head">
+            <h2>How We Work</h2>
+            <p>I prefer to understand the key issues clearly before execution starts, rather than doing first and fixing direction later.</p>
+          </div>
+          <div class="section-body">
+            <div class="process-grid">
+              <div class="mini-card">
+                <div class="step-no">01</div>
+                <h3>Review the current situation and goals</h3>
+                <p>We first clarify what is happening with your website, campaigns, or search performance, and define whether the goal is traffic, inquiries, brand visibility, or a full site upgrade.</p>
+              </div>
+
+              <div class="mini-card">
+                <div class="step-no">02</div>
+                <h3>Plan the structure and solution</h3>
+                <p>Based on your business model, we define site structure, page priorities, search direction, content logic, and the right order of execution.</p>
+              </div>
+
+              <div class="mini-card">
+                <div class="step-no">03</div>
+                <h3>Optimize and iterate continuously</h3>
+                <p>The goal is not a one-time delivery. It is to build a website that supports ongoing optimization and long-term accumulated value.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="card">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p>These are some of the most common questions people ask about web development, SEO, SEM, and GEO.</p>
+          </div>
+          <div class="section-body faq">
+            <details open>
+              <summary>Should web development and SEO be handled separately or together?</summary>
+              <div class="answer">
+                It is usually better to plan them together. Site structure, content organization, and technical foundations all directly affect SEO performance. When search and conversion logic are considered during the build stage, you avoid a lot of unnecessary rework later.
+              </div>
+            </details>
+
+            <details>
+              <summary>How should SEO and SEM work together?</summary>
+              <div class="answer">
+                SEO is stronger for long-term organic growth, while SEM is stronger for immediate high-intent acquisition. In most cases, the more effective approach is to use SEM for short-term goals while using SEO to build long-term content strength and organic visibility.
+              </div>
+            </details>
+
+            <details>
+              <summary>What is the difference between GEO and traditional SEO?</summary>
+              <div class="answer">
+                GEO focuses more on brand visibility in generative search, AI answer engines, and newer retrieval environments. Beyond page optimization itself, it also emphasizes identity signals, case evidence, FAQs, content consistency, and trustworthiness.
+              </div>
+            </details>
+
+            <details>
+              <summary>I already have a website. Do I need to rebuild it?</summary>
+              <div class="answer">
+                Not necessarily. Many projects do not require a full rebuild. The better first step is to determine whether the issue is positioning, structure, content, search foundations, or landing page conversion, and then decide whether partial optimization or a full upgrade makes more sense.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="card">
+          <div class="section-head">
+            <h2>Contact Me</h2>
+            <p>If you are planning a new website, want better SEO or SEM performance, or want to prepare for GEO early, feel free to reach out directly. You do not need to prepare a complete plan first. Just tell me the biggest bottleneck you are facing right now.</p>
+          </div>
+
+          <div class="section-body">
+            <div class="contact-layout">
+              <div class="contact-main">
+                <h3>Send an Inquiry Online</h3>
+                <p>
+                  You can submit your requirements, current project stage, and contact details directly. For follow-up communication,
+                  service coordination, and necessary security protection, we collect the information you voluntarily provide,
+                  along with essential network and device environment data at the time of submission.
+                </p>
+
+                <form id="bizForm" class="contact-form" novalidate>
+                  <div class="field-grid-2">
+                    <div class="field">
+                      <label for="name">Your Name *</label>
+                      <input id="name" name="name" class="input" type="text" placeholder="Enter your name" required />
+                    </div>
+
+                    <div class="field">
+                      <label for="contactInfo">WhatsApp</label>
+                      <input id="contactInfo" name="contactInfo" class="input" type="text" placeholder="Enter your WhatsApp number" />
+                    </div>
+                  </div>
+
+                  <div class="field-grid-2">
+                    <div class="field">
+                      <label for="email">Email *</label>
+                      <input id="email" name="email" class="input" type="email" placeholder="Enter your email" required />
+                    </div>
+
+                    <div class="field">
+                      <label for="company">Company / Brand Name</label>
+                      <input id="company" name="company" class="input" type="text" placeholder="Enter your company or brand name" />
+                    </div>
+                  </div>
+
+                  <div class="field-grid-2">
+                    <div class="field">
+                      <label for="industry">Industry *</label>
+                      <input id="industry" name="industry" class="input" type="text" placeholder="For example: manufacturing, e-commerce, education, services" required />
+                    </div>
+
+                    <div class="field">
+                      <label for="subject">What do you want to discuss? *</label>
+                      <select id="subject" name="subject" class="select" required>
+                        <option value="">Please choose a topic</option>
+                        <option value="Corporate Website Development">Corporate Website Development</option>
+                        <option value="International Independent Site Build">International Independent Site Build</option>
+                        <option value="SEO Optimization">SEO Optimization</option>
+                        <option value="Google Ads / SEM">Google Ads / SEM</option>
+                        <option value="GEO Content Optimization">GEO Content Optimization</option>
+                        <option value="Server / Website Deployment">Server / Website Deployment</option>
+                        <option value="Website Audit and Overall Strategy">Website Audit and Overall Strategy</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="field-grid-2">
+                    <div class="field">
+                      <label for="siteStage">Current Website Stage</label>
+                      <select id="siteStage" name="siteStage" class="select">
+                        <option value="">Please choose the current stage</option>
+                        <option value="No website yet">No website yet</option>
+                        <option value="Existing corporate website, preparing to optimize">Existing corporate website, preparing to optimize</option>
+                        <option value="Existing independent site with low traffic">Existing independent site with low traffic</option>
+                        <option value="Running ads with average conversion">Running ads with average conversion</option>
+                        <option value="Content foundation exists, planning SEO / GEO">Content foundation exists, planning SEO / GEO</option>
+                        <option value="Project is still being planned">Project is still being planned</option>
+                      </select>
+                    </div>
+
+                    <div class="field">
+                      <label for="website">Website URL</label>
+                      <input id="website" name="website" class="input" type="url" placeholder="For example: https://www.example.com" />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="market">Target Market / Target Customers</label>
+                    <input id="market" name="market" class="input" type="text" placeholder="For example: China market, overseas market, B2B clients, end users" />
+                  </div>
+
+                  <div class="field">
+                    <label for="message">Additional Details *</label>
+                    <textarea id="message" name="message" class="textarea" placeholder="Briefly describe the main issue you want to solve right now, for example: the website has no organic traffic, ads are running but conversion is weak, or you want to rebuild the site while supporting both SEO and GEO." required></textarea>
+                  </div>
+
+                  <div id="ipStatus" class="ip-status">Retrieving network environment information...</div>
+
+                  <div class="form-note">
+                    By submitting this form, you agree that we may collect and process the information you provide,
+                    along with basic network and device environment data at the time of submission,
+                    for reply communication, requirement discussion, and necessary security protection.
+                  </div>
+
+                  <button type="submit" class="btn btn-primary" id="submitBtn">Submit Inquiry</button>
+                  <div id="result" class="result" aria-live="polite"></div>
+                </form>
+              </div>
+
+              <div class="contact-side">
+                <div class="mini-card">
+                  <h3>Common Inquiry Topics</h3>
+                  <ul>
+                    <li>Corporate Website Development</li>
+                    <li>International Independent Site Build</li>
+                    <li>SEO Optimization</li>
+                    <li>Google Ads / SEM</li>
+                    <li>GEO Content Optimization</li>
+                    <li>Website Audit and Overall Strategy</li>
+                  </ul>
+                </div>
+
+                <div class="mini-card" style="margin-top:14px;">
+                  <h3>Helpful Information to Prepare First</h3>
+                  <ul>
+                    <li>Whether you already have a website</li>
+                    <li>The biggest issue you want to solve right now</li>
+                    <li>Your main target market or customer type</li>
+                    <li>Whether your priority is SEO, SEM, GEO, or a broader rebuild</li>
+                  </ul>
+                </div>
+
+                <div class="mini-card" style="margin-top:14px;">
+                  <h3>Contact Details</h3>
+                  <div class="contact-meta">
+                    <div class="contact-meta-item"><strong>Phone:</strong> <a href="tel:+8651257828333">+86 512 5782 8333</a></div>
+                    <div class="contact-meta-item"><strong>Email:</strong> <a href="mailto:contact@mrwang.com">contact@mrwang.com</a></div>
+                    <div class="contact-meta-item"><strong>Site:</strong> <a href="https://www.mrwang.com/">www.mrwang.com</a></div>
+                  </div>
+
+                  <div class="contact-links">
+                    <a class="btn btn-light" href="tel:+8651257828333">Call Now</a>
+                    <a class="btn btn-light" href="mailto:contact@mrwang.com">Send Email</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      ©2008-<span id="year"></span> <a href="https://www.mrwang.com/">Mr. Wang</a>. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuToggle.addEventListener("click", function () {
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!expanded));
+      mobileNav.classList.toggle("show");
+      menuToggle.textContent = expanded ? "☰" : "✕";
+    });
+
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNav.classList.remove("show");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    const API_URL = "https://contact.mrwang.com/contact.php";
+    let currentIp = "";
+
+    const form = document.getElementById("bizForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const resultBox = document.getElementById("result");
+    const ipStatus = document.getElementById("ipStatus");
+
+    function showResult(message, ok) {
+      resultBox.style.display = "block";
+      resultBox.className = "result " + (ok ? "ok" : "err");
+      resultBox.textContent = message;
+    }
+
+    async function getPublicIP() {
+      const endpoints = [
+        "https://api64.ipify.org?format=json",
+        "https://api.ipify.org?format=json"
+      ];
+
+      for (const url of endpoints) {
+        try {
+          const res = await fetch(url, {
+            method: "GET",
+            cache: "no-store"
+          });
+          const data = await res.json();
+          if (data && data.ip) {
+            return data.ip;
+          }
+        } catch (e) {}
+      }
+
+      throw new Error("Failed to retrieve public IP");
+    }
+
+    function getBrowserInfo() {
+      const nav = window.navigator || {};
+      const scr = window.screen || {};
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      const connection = nav.connection || nav.mozConnection || nav.webkitConnection || null;
+
+      return {
+        user_agent: nav.userAgent || "",
+        language: nav.language || "",
+        languages: Array.isArray(nav.languages) ? nav.languages.join(", ") : "",
+        platform: nav.platform || "",
+        cookie_enabled: typeof nav.cookieEnabled === "boolean" ? nav.cookieEnabled : "",
+        do_not_track: nav.doNotTrack || window.doNotTrack || "",
+        hardware_concurrency: nav.hardwareConcurrency || "",
+        device_memory: nav.deviceMemory || "",
+        max_touch_points: nav.maxTouchPoints || "",
+        screen_width: scr.width || "",
+        screen_height: scr.height || "",
+        color_depth: scr.colorDepth || "",
+        pixel_ratio: window.devicePixelRatio || "",
+        viewport_width: window.innerWidth || "",
+        viewport_height: window.innerHeight || "",
+        timezone: tz,
+        referrer: document.referrer || "",
+        page_url: window.location.href,
+        page_path: window.location.pathname,
+        hostname: window.location.hostname,
+        online: typeof nav.onLine === "boolean" ? nav.onLine : "",
+        connection_type: connection && connection.effectiveType ? connection.effectiveType : "",
+        timestamp: new Date().toISOString()
+      };
+    }
+
+    async function initIP() {
+      ipStatus.textContent = "Retrieving network environment information...";
+      try {
+        currentIp = await getPublicIP();
+        ipStatus.textContent = "Network environment verification completed. The form can now be submitted.";
+      } catch (err) {
+        currentIp = "";
+        ipStatus.textContent = "Failed to retrieve network environment information. Please check your connection and try again.";
+      }
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      if (!currentIp) {
+        showResult("Network environment information has not been retrieved successfully, so the form cannot be submitted yet.", false);
+        return;
+      }
+
+      const payload = {
+        name: document.getElementById("name").value.trim(),
+        contactInfo: document.getElementById("contactInfo").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        company: document.getElementById("company").value.trim(),
+        industry: document.getElementById("industry").value.trim(),
+        subject: document.getElementById("subject").value.trim(),
+        siteStage: document.getElementById("siteStage").value.trim(),
+        website: document.getElementById("website").value.trim(),
+        market: document.getElementById("market").value.trim(),
+        message: document.getElementById("message").value.trim(),
+        client_ip: currentIp,
+        user_agent: navigator.userAgent || "",
+        browser_info: JSON.stringify(getBrowserInfo())
+      };
+
+      if (!payload.name || !payload.email || !payload.industry || !payload.subject || !payload.message) {
+        showResult("Please complete all required fields.", false);
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Submitting...";
+
+      try {
+        const res = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const text = await res.text();
+        let data;
+
+        try {
+          data = JSON.parse(text);
+        } catch (e) {
+          showResult("Submission failed. Please try again later.", false);
+          return;
+        }
+
+        if (res.ok && data.success === true) {
+          showResult(data.message || "Your inquiry was submitted successfully. We will contact you soon.", true);
+          form.reset();
+        } else {
+          showResult(data.message || "Submission failed. Please try again later.", false);
+        }
+      } catch (err) {
+        showResult("Request failed: " + err.message, false);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit Inquiry";
+      }
+    });
+
+    initIP();
+  </script>
+</body>
+</html>
