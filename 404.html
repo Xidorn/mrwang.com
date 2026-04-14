@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | Mr Wang</title>
+  <meta name="description" content="The page you are looking for could not be found. Return to mrwang.com to continue browsing." />
+  <meta name="robots" content="noindex,follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="canonical" href="https://mrwang.com/404.html" />
+
+  <style>
+    :root {
+      --bg1: #f7f9fc;
+      --bg2: #edf3fa;
+      --card: rgba(255,255,255,0.94);
+      --text: #1d1d1f;
+      --sub: #667085;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --light: #eef4ff;
+      --light-hover: #e2ebff;
+      --border: #e5e7eb;
+      --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+      --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.05);
+      --maxw: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+      padding: 18px 12px 24px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(var(--maxw), 100%);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      margin-bottom: 18px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.62);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.04);
+    }
+
+    .topbar-inner {
+      min-height: 70px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      margin-top: 2px;
+      font-size: 12px;
+      color: var(--sub);
+      line-height: 1.5;
+    }
+
+    .top-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 12px;
+      background: var(--light);
+      color: #334155;
+      font-size: 14px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .top-link:hover {
+      background: var(--light-hover);
+    }
+
+    .hero {
+      min-height: calc(100vh - 150px);
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--card);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.62);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 34px 28px 28px;
+      text-align: center;
+    }
+
+    .code-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 16px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: #475569;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      letter-spacing: 0.04em;
+    }
+
+    .title {
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      line-height: 1.35;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+    }
+
+    .lead {
+      max-width: 580px;
+      margin: 0 auto 20px;
+      color: #475569;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: .2s ease;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(37,99,235,0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-light {
+      background: var(--light);
+      color: #334155;
+    }
+
+    .btn-light:hover {
+      background: var(--light-hover);
+      transform: translateY(-1px);
+    }
+
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      text-align: left;
+      margin-top: 8px;
+    }
+
+    .tip {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      padding: 16px;
+    }
+
+    .tip h3 {
+      font-size: 16px;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .tip p {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .footer {
+      margin-top: 18px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow-soft);
+      padding: 16px 18px;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.9;
+      text-align: center;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 860px) {
+      .topbar-inner,
+      .card,
+      .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .tips {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn,
+      .top-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar" aria-label="Top navigation">
+      <div class="topbar-inner">
+        <a class="brand" href="https://mrwang.com/">
+          <span class="brand-mark">MW</span>
+          <span>
+            <span class="brand-title">Mr Wang</span>
+            <span class="brand-sub">Web Development / SEO / SEM / GEO</span>
+          </span>
+        </a>
+
+        <a class="top-link" href="https://mrwang.com/">Back to Home</a>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="card" aria-labelledby="error-title">
+        <div class="code-badge">ERROR 404</div>
+        <h1 class="title" id="error-title">Page Not Found</h1>
+        <p class="subtitle">The page you are looking for does not exist or may have been moved.</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="https://mrwang.com/">Go to Homepage</a>
+          <a class="btn btn-light" href="mailto:contact@mrwang.com">Email Me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      ©2008-<span id="year"></span> <a href="https://mrwang.com/">Mr Wang</a>. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
